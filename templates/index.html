@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron text-center bg-primary text-white">
+    <h1 class="display-4">Welcome to My Portfolio</h1>
+    <p class="lead">This is the homepage.</p>
+    <a class="btn btn-light btn-lg" href="{{ url_for('projects') }}" role="button">View My Projects</a>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="static/images/NLP.jpeg" class="card-img-top card-img-custom" alt="Project 1">
+            <div class="card-body">
+                <h5 class="card-title">End-To-End NLP Chatbot</h5>
+                <p class="card-text">A chatbot integrated with HTML, CSS, JS, FastAPI, and MySQL.</p>
+                <a href="https://github.com/Bharath12js/Project_5_NLP_Chatbot" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="static/images/Alpha.jpeg" class="card-img-top card-img-custom" alt="Project 2">
+            <div class="card-body">
+                <h5 class="card-title">Alpha Thalassemia Screening</h5>
+                <p class="card-text">A comparative study of multiple machine learning classifiers.</p>
+                <a href="https://github.com/Bharath12js/Project_4_ALPHA_THALASSEMIA_DETECTION" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="static/images/Crops.jpeg" class="card-img-top card-img-custom" alt="Project 3">
+            <div class="card-body">
+                <h5 class="card-title">Crops Classification</h5>
+                <p class="card-text">Classification of crops using soil and environmental data.</p>
+                <a href="https://github.com/Bharath12js/Project_3_Crops_Classifications" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="static/images/fuzzy.jpeg" class="card-img-top card-img-custom" alt="Project 4">
+            <div class="card-body">
+                <h5 class="card-title">Water Resources Allocation</h5>
+                <p class="card-text">An integrated approach for efficient water resources allocation.</p>
+                <a href="https://github.com/Bharath12js/Project_2_FuzzyTopsis_FuzzyAHP" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="static/images/Alzhemiers.jpeg" class="card-img-top card-img-custom" alt="Project 5">
+            <div class="card-body">
+                <h5 class="card-title">Alzheimer’s Disease Prediction</h5>
+                <p class="card-text">Using machine learning algorithms for early AD detection.</p>
+                <a href="https://github.com/Bharath12js/Project_1_Predicting_Alzheimer" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
